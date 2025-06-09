@@ -21,7 +21,7 @@ const QueryType = new GraphQLObjectType({
     appVersions: {
       type: new GraphQLNonNull(GraphQLString),
       resolve: async (_root, _args) => {
-        return JSON.parse('{}');
+        return '1.0.0';
       },
     },
     me: {
